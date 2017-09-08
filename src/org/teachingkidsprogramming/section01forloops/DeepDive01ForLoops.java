@@ -138,7 +138,7 @@ public class DeepDive01ForLoops
   public void forLoopsCanSkip() throws Exception
   {
     String numbers = "# ";
-    for (int i = 1; i < 20; i += ____)
+    for (int i = 1; i < 20; i += 2)
     {
       numbers = numbers + i + ",";
       preventInfiniteLoops();
@@ -149,7 +149,7 @@ public class DeepDive01ForLoops
   public void forLoopsCanSkipUpAndDown() throws Exception
   {
     String numbers = "# ";
-    for (int i = 20; 0 < i && i < 40; i += ____)
+    for (int i = 20; 0 < i && i < 40; i += -3)
     {
       numbers = numbers + i + ",";
       preventInfiniteLoops();
@@ -160,7 +160,7 @@ public class DeepDive01ForLoops
   public void forLoopsCanGoBackwards() throws Exception
   {
     String numbers = "Countdown: ";
-    for (int i = 9; i >= 1; i += ____)
+    for (int i = 9; i >= 1; i += -1)
     {
       numbers += i;
       preventInfiniteLoops();
@@ -175,7 +175,7 @@ public class DeepDive01ForLoops
     {
       sound += "H";
     }
-    Assert.assertEquals(sound, ___);
+    Assert.assertEquals(sound, "AH");
   }
   /**
    * Ignore the following, it's needed to run the deep dive
