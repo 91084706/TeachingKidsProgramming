@@ -109,13 +109,13 @@ public class DeepDive01ForLoops
     {
       sound += "H";
     }
-    Assert.assertEquals(sound, ___);
+    Assert.assertEquals(sound, "AHHH");
   }
   @Test
   public void forLoopsEndAtTheEnd() throws Exception
   {
     String numbers = "# ";
-    for (int i = 0; i < ____; i++)
+    for (int i = 0; i < 6; i++)
     {
       numbers += i;
       preventInfiniteLoops();
@@ -126,7 +126,7 @@ public class DeepDive01ForLoops
   public void forLoopsCanStartAnywhere() throws Exception
   {
     String answer = "Because ";
-    for (int i = ____; i < 10; i++)
+    for (int i = 7; i < 10; i++)
     {
       answer += i;
       preventInfiniteLoops();
