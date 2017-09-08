@@ -9,12 +9,13 @@ public class Houses
     Tortoise.show();
     //   Make the tortoise move as fast as possible --#11
     //   Have the tortoise start at 200 pixels in on the X axis --#14
-    //   The current height is 40 --#1.2
+    int height = 40;
     //   drawHouse (recipe below) --#9.1
     //   ------------- Recipe for drawHouse --#9.2
     //       Change the pen color of the line the tortoise draws to lightGray --#15
-    //       Move the tortoise the height of a house --#1.1
+    Tortoise.move(height);
     //       Turn the tortoise 90 degrees to the right --#2
+    Tortoise.turn(90);
     //       Move the tortoise 30 pixels --#3
     //       Turn the tortoise 90 degrees to the right --#4
     //       Move the tortoise the height of a house --#5
