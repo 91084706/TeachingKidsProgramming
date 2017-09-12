@@ -1,30 +1,35 @@
 package org.teachingkidsprogramming.section02methods;
 
 import org.teachingextensions.logo.Tortoise;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 
 public class Houses
 {
   public static void main(String[] args)
   {
     Tortoise.show();
-    //   Make the tortoise move as fast as possible --#11
-    //   Have the tortoise start at 200 pixels in on the X axis --#14
+    Tortoise.setSpeed(10);
+    Tortoise.setX(200);
     int height = 40;
-    //   drawHouse (recipe below) --#9.1
-    //   ------------- Recipe for drawHouse --#9.2
+    drawHouse(height);
+    height = 120;
+    drawHouse(height);
+    height = 90;
+    drawHouse(height);
+    height = 20;
+    drawHouse(height);
+  }
+  private static void drawHouse(int height)
+  {
     //       Change the pen color of the line the tortoise draws to lightGray --#15
+    Tortoise.setPenColor(PenColors.Grays.LightGray);
     Tortoise.move(height);
-    //       Turn the tortoise 90 degrees to the right --#2
     Tortoise.turn(90);
-    //       Move the tortoise 30 pixels --#3
-    //       Turn the tortoise 90 degrees to the right --#4
-    //       Move the tortoise the height of a house --#5
-    //       Turn the tortoise 90 degrees to the left --#6
-    //       Move the tortoise 20 pixels --#7
-    //       Turn the tortoise 90 degrees to the left --#8
-    //   ------------- End of drawHouse recipe --#9.3
-    //   drawHouse with height 120 (recipe below) --#10
-    //   drawHouse with height 90 (recipe below) --#12
-    //   drawHouse with height 20 (recipe below) --#13
+    Tortoise.move(30);
+    Tortoise.turn(90);
+    Tortoise.move(height);
+    Tortoise.turn(-90);
+    Tortoise.move(20);
+    Tortoise.turn(-90);
   }
 }
