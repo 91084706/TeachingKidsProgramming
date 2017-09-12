@@ -21,7 +21,6 @@ public class Houses
   }
   private static void drawHouse(int height)
   {
-    //       Change the pen color of the line the tortoise draws to lightGray --#15
     Tortoise.setPenColor(PenColors.Grays.LightGray);
     Tortoise.move(height);
     Tortoise.turn(90);
