@@ -21,7 +21,7 @@ public class Houses
   }
   private static void drawHouse(int height)
   {
-    Tortoise.setPenColor(PenColors.Grays.LightGray);
+    Tortoise.setPenColor(PenColors.Reds.Red);
     Tortoise.move(height);
     Tortoise.turn(90);
     Tortoise.move(30);
