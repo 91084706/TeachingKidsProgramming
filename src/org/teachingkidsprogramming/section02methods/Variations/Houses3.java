@@ -4,7 +4,7 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.virtualproctor.VirtualProctor;
 
-public class Houses2
+public class Houses3
 {
   public static void main(String[] args)
   {
@@ -27,11 +27,20 @@ public class Houses2
     Tortoise.setPenColor(PenColors.Reds.Red);
     Tortoise.move(height);
     //drawFlatRoof();
-    drawPointyRoof();
+    //drawPointyRoof();
+    drawSlantedRoof();
     Tortoise.move(height);
     Tortoise.turn(-90);
     Tortoise.move(20);
     Tortoise.turn(-90);
+  }
+  private static void drawSlantedRoof()
+  {
+    Tortoise.move(30);
+    Tortoise.turn(120);
+    Tortoise.move(40);
+    Tortoise.turn(60);
+    Tortoise.move(10);
   }
   private static void drawPointyRoof()
   {
