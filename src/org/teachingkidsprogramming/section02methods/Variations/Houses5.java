@@ -34,10 +34,10 @@ public class Houses5
   }
   private static void drawDomeRoof()
   {
-    for (int i = 0; i < 360; i++)
+    for (int i = 0; i < 180; i++)
     {
-      Tortoise.move(0.5);
-      Tortoise.turn(2);
+      Tortoise.move(0.25);
+      Tortoise.turn(1);
     }
   }
   private static void drawTrapezoidRoof()
