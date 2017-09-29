@@ -1,26 +1,26 @@
-package org.teachingkidsprogramming.section03ifs;
+package org.teachingkidsprogramming.section03ifs.HiLowVariations;
 
 import java.util.Random;
 
 import org.teachingextensions.logo.Sound;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
+// this variation tells the user how many guesses they have left
 
-public class HiLow
+public class HiLow2
 {
   public static void main(String[] args)
   {
-    //    Choose a random number between 1 and 100 --#4.1 (fake!) & --#13
     Random rand = new Random();
+    int i;
     int answer = rand.nextInt(100) + 1;
     /*
      * int answer = (int) (Math.random() * 100 + 1);
      */
     //System.out.println("The answer: " + answer);
     //int answer = 40;
-    for (int i = 1; i <= 8; i++)
+    for (i = 1; i <= 8; i++)
     {
       int guess = MessageBox.askForNumericalInput("What is your guess?");
-      //         If the guess is correct --#4
       if (guess == answer)
       {
         Sound.playBeep();
@@ -39,6 +39,7 @@ public class HiLow
       {
         MessageBox.showMessage("You lost");
       }
+      MessageBox.showMessage("Number of guess left: " + (8 - i));
     }
   }
 }
