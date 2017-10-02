@@ -6,7 +6,7 @@ import org.teachingextensions.logo.Sound;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 // this variation tells the user how many guesses they have left
 
-public class HiLow4
+public class HiLow2to4
 {
   public static void main(String[] args)
   {
@@ -15,12 +15,13 @@ public class HiLow4
     int answer = rand.nextInt(100) + 1;
     //int answer = (int) (Math.random() * 100 + 1);
     //
-    System.out.println("The answer: " + answer);
+    //System.out.println("The answer: " + answer);
     //int answer = 40;
+    int numberOfGuesses = MessageBox.askForNumericalInput("How many guesses?");
     int upperRange = 100;
-    for (i = 1; i <= 8; i++)
+    for (i = 1; i <= numberOfGuesses; i++)
     {
-      int guess = MessageBox.askForNumericalInput("What is your guess?");
+      int guess = MessageBox.askForNumericalInput("What is your guess between 1 and " + upperRange + "?");
       //input validation
       while (guess < 1 || guess > upperRange)
       {
@@ -41,10 +42,11 @@ public class HiLow4
       {
         MessageBox.showMessage("Too low");
       }
-      if (i == 8)
+      if (i == numberOfGuesses)
       {
         MessageBox.showMessage("You lost");
       }
+      MessageBox.showMessage("Number of guess left: " + (8 - i));
     }
   }
 }
