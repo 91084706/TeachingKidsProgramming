@@ -23,6 +23,7 @@ public class ChooseYourOwnAdventure
       //          wakeUp (recipe below) --#2.1
       //          ------------- Recipe for wakeUp --#2.2
       //              Tell the user "You wake up and have a boring day. The end." --#1
+      MessageBox.showMessage("You wake up and have a boring day. The end.");
       //          ------------- End of wakeUp recipe --#2.3
     }
     else if ("explore".equalsIgnoreCase(action))
