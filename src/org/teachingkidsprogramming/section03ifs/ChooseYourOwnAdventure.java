@@ -40,11 +40,11 @@ public class ChooseYourOwnAdventure
     MessageBox.showMessage(
         "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
     String answer = MessageBox.askForTextInput("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
-    if (answer == "toilet")
+    if ("toilet".equalsIgnoreCase(answer))
     {
       pourIntoToilet();
     }
-    else if (answer == "backyard")
+    else if ("backyard".equalsIgnoreCase(answer))
     {
       pourIntoBackyard();
     }
@@ -59,11 +59,11 @@ public class ChooseYourOwnAdventure
         "As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water.");
     String answer = MessageBox
         .askForTextInput("As the man starts to prepare you as soup, do you...'Scream' or 'Faint'?");
-    if (answer == "faint")
+    if ("Faint".equalsIgnoreCase(answer))
     {
       MessageBox.showMessage("You made a delicious soup! Yum! The end.");
     }
-    else if (answer == "scream")
+    else if ("Scream".equalsIgnoreCase(answer))
     {
       startStory();
     }
@@ -77,12 +77,12 @@ public class ChooseYourOwnAdventure
     MessageBox.showMessage(
         "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
     String answer = MessageBox.askForTextInput("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
-    if (answer == "yes")
+    if ("yes".equalsIgnoreCase(answer))
     {
       MessageBox
           .showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
     }
-    else if (answer == "heck yes")
+    else if ("heck yes".equalsIgnoreCase(answer))
     {
       MessageBox
           .showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
