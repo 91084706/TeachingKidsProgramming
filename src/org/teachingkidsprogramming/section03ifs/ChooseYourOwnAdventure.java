@@ -17,12 +17,12 @@ public class ChooseYourOwnAdventure
   {
     tellMoreStory("One morning the Tortoise woke up in a dream.");
     animateStartStory();
-    String action = askAQuestion("Do you want to 'wake up' or 'explore' the dream?");
-    if ("wake up".equalsIgnoreCase(action))
+    String answer = askAQuestion("Do you want to 'wake up' or 'explore' the dream?");
+    if ("wake up".equalsIgnoreCase(answer))
     {
       wakeUp();
     }
-    else if ("explore".equalsIgnoreCase(action))
+    else if ("explore".equalsIgnoreCase(answer))
     {
       approachOoze();
     }
