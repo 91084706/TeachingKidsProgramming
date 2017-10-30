@@ -248,7 +248,7 @@ public class DeepDive03Ifs
     Assert.assertEquals("", result);
   }
   @Test
-  public void ifICan() throws Exception
+  public void CanIGoToTheBathroom() throws Exception
   {
     String teacherSays = "may";
     if (_____)
