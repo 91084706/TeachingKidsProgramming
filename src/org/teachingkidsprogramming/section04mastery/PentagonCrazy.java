@@ -33,9 +33,8 @@ public class PentagonCrazy
   private static void adjustPen()
   {
     Tortoise.setPenColor(ColorWheel.getNextColor());
-    int width = Tortoise.getPenWidth();
-    Tortoise.setPenWidth(width + 1);
-    if (width > 4)
+    Tortoise.setPenWidth(Tortoise.getPenWidth() + 1);
+    if (Tortoise.getPenWidth() > 4)
     {
       Tortoise.setPenWidth(1);
     }
