@@ -1,5 +1,7 @@
 package org.teachingkidsprogramming.section04mastery;
 
+import java.awt.Color;
+
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 
