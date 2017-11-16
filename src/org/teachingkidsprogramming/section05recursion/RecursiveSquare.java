@@ -33,12 +33,12 @@ public class RecursiveSquare
           Tortoise.turn(90);
         }
       }
-    } // length > 10
       //
-    moveBackToCenter(length);
-    //
-    length = length * 2;
-    //
+      moveBackToCenter(length);
+      //
+      length = length * 2;
+      //
+    } // length > 10
   }
   private static void moveBackToCenter(double length)
   {
